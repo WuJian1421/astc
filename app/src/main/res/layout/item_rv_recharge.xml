@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/item_rv_cv"
+        android:layout_width="80dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="5dp"
+        android:background="@mipmap/review_yellow_box"
+        android:gravity="center"
+        android:text="@string/under_review"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="15sp" />
+</LinearLayout>

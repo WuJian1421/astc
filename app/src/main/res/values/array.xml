@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="rv_search_for">
+        <item>充值中心</item>
+        <item>话费充值中心</item>
+        <item>手机话费流量充值</item>
+        <item>手机话费查询</item>
+    </string-array>
+
+    <string-array name="gv_ds">
+        <item>行情</item>
+        <item>话费充值</item>
+        <item>流量充值</item>
+        <item>火车票</item>
+    </string-array>
+
+    <string-array name="gv_ge">
+        <item>斗地主</item>
+        <item>同花顺</item>
+    </string-array>
+
+    <string-array name="gv_home">
+        <item>扫一扫</item>
+        <item>收款</item>
+        <item>转账</item>
+        <item>账户</item>
+        <item>区块查询</item>
+        <item>邀请好友</item>
+        <item>通证</item>
+        <item>更多</item>
+    </string-array>
+
+    <string-array name="rv_mine">
+        <item>系统设置</item>
+        <item>语言设置</item>
+        <item>个人认证</item>
+        <item>企业认证</item>
+        <item>关于我们</item>
+        <item>退出钱包</item>
+    </string-array>
+
+    <string-array name="rv_about_us">
+        <item>当前版本</item>
+        <item>检查更新</item>
+        <item>意见反馈</item>
+        <item>申诉记录</item>
+    </string-array>
+
+    <string-array name="rv_system_settings">
+        <item>修改登录密码</item>
+        <item>修改交易密码</item>
+        <item>支付方式</item>
+    </string-array>
+
+    <string-array name="sp_individual">
+        <item>身份证</item>
+        <item>护照</item>
+    </string-array>
+
+    <string-array name="sp_transfer">
+        <item>BTC</item>
+        <item>ASTC</item>
+    </string-array>
+
+    <string-array name="rv_pay">
+        <item>支付宝账号</item>
+        <item>微信账号</item>
+        <item>银行卡绑定</item>
+        <item>ASTC</item>
+    </string-array>
+
+    <string-array name="dialog_photo">
+        <item>拍照</item>
+        <item>相册</item>
+    </string-array>
+</resources>

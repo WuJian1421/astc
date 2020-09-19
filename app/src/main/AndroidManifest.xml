@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.astc">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission
+        android:name="android.permission.ACCESS_MOCK_LOCATION"
+        tools:ignore="MockLocation,ProtectedPermissions" />
+    <uses-permission
+        android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <application
+        android:name=".base.Applications"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_config"
+        android:resizeableActivity="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        tools:ignore="AllowBackup,GoogleAppIndexingWarning"
+        tools:targetApi="n">
+        <activity android:name=".view.activity.mine.ModifyLoginPasswordActivity" />
+        <activity android:name=".view.activity.home.AddingAssetsActivity" />
+        <activity android:name=".view.activity.conversation.DialogueActivity" />
+        <activity android:name=".view.activity.mine.PayAstcActivity" />
+        <activity android:name=".view.activity.home.OrderRecordActivity" />
+        <activity android:name=".view.activity.mine.FillInTheAppealActivity" />
+        <activity android:name=".view.activity.mine.AddBankCardActivity" />
+        <activity android:name=".view.activity.mine.BindBankCardActivity" />
+        <activity android:name=".view.activity.mine.BindAccountActivity" />
+        <activity android:name=".view.activity.home.ImageActivity" />
+        <activity android:name=".view.activity.home.PhotoActivity" />
+        <activity android:name=".view.activity.mine.PaymentMethodActivity" />
+        <activity android:name=".view.activity.GuidePageActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".view.activity.mine.GrievanceRecordActivity" />
+        <activity android:name=".view.activity.mine.TransactionPasswordActivity" />
+        <activity android:name=".view.activity.mine.IndividualCertificationActivity" />
+        <activity android:name=".view.activity.mine.languageSettingActivity" />
+        <activity android:name=".view.activity.mine.EnterpriseCertificationActivity" />
+        <activity android:name=".view.activity.mine.SystemSettingsActivity" />
+        <activity android:name=".view.activity.ServiceTipsActivity" />
+        <activity android:name=".view.activity.about.FeedbackActivity" />
+        <activity android:name=".view.activity.home.NewsActivity" />
+        <activity android:name=".view.activity.mine.AboutUsActivity" />
+        <activity android:name=".view.activity.home.SearchForActivity" />
+        <activity android:name=".view.activity.home.TokenActivity" />
+        <activity android:name=".view.activity.home.InviteFriendsActivity" />
+        <activity android:name=".view.activity.home.BlockQueryActivity" />
+        <activity android:name=".view.activity.home.AccountActivity" />
+        <activity android:name=".view.activity.home.TransferActivity" />
+        <activity android:name=".view.activity.home.ScanItActivity" />
+        <activity android:name=".view.activity.BackupMnemonicActivity" />
+        <activity android:name=".view.activity.ImportWalletActivity" />
+        <activity android:name=".view.activity.CreateWalletActivity" />
+        <activity
+            android:name=".MainActivity"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+
+        <!-- 适配Android 7.0文件意图 -->
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+    </application>
+</manifest>

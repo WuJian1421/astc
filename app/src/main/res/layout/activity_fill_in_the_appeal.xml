@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    tools:context=".view.activity.mine.FillInTheAppealActivity">
+
+    <com.hjq.bar.TitleBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/yellow"
+        app:title="@string/fill_in_the_appeal" />
+
+    <com.example.astc.util.views.ClearEditText
+        android:id="@+id/et_appeal1"
+        style="@style/EditTextStyle"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_margin="20dp"
+        android:background="@mipmap/edit_input_bg"
+        android:gravity="start"
+        android:hint="@string/appeal_tips" />
+
+    <com.example.astc.util.views.ClearEditText
+        android:id="@+id/et_appeal2"
+        style="@style/EditTextStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:hint="@string/et_contact_details" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/bu_appeal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
+        android:background="@mipmap/bu_gradient"
+        android:gravity="center"
+        android:text="@string/submit"
+        android:textColor="@android:color/white" />
+</LinearLayout>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".view.activity.mine.AddBankCardActivity">
+
+    <com.hjq.bar.TitleBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/yellow"
+        app:title="@string/add_to" />
+
+    <com.example.astc.util.views.ClearEditText
+        android:id="@+id/et_add_bank1"
+        style="@style/EditTextStyle"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:hint="@string/please_enter_cardholder_name" />
+
+    <com.example.astc.util.views.ClearEditText
+        android:id="@+id/et_add_bank2"
+        style="@style/EditTextStyle"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:hint="@string/please_enter_the_bank" />
+
+    <com.example.astc.util.views.ClearEditText
+        android:id="@+id/et_add_bank3"
+        style="@style/EditTextStyle"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:hint="@string/please_enter_the_account_opening_bank" />
+
+    <com.example.astc.util.views.ClearEditText
+        android:id="@+id/et_add_bank4"
+        style="@style/EditTextStyle"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:hint="@string/please_enter_your_bank_card_number" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/bu_add_bank"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="20dp"
+        android:background="@mipmap/bu_yellow"
+        android:gravity="center"
+        android:text="@string/save"
+        android:textColor="@android:color/white" />
+</LinearLayout>

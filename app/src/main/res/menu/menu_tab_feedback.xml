@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/feedback_program_error"
+        android:title="@string/program_error" />
+    <item
+        android:id="@+id/feedback_product_suggestions"
+        android:title="@string/product_suggestions" />
+</menu>

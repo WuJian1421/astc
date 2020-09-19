@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="yellow">#FF8F00</color>
+    <color name="concentrated">#000000</color>
+    <color name="gay">#F4F4F4</color>
+
+    <color name="common_pressed">#ffcccccc</color>
+    <color name="common_normal">#ffffffff</color>
+
+    <color name="y">#FFAB00</color>
+    <color name="y_h">#FF7E03</color>
+
+    <!-- 分割线的颜色 -->
+    <color name="colorLine">#ECECEC</color>
+
+    <!-- 透明色 -->
+    <color name="transparent">#00000000</color>
+    <color name="black5">#0D000000</color>
+
+    <color name="black70">#B3000000</color>
+    <color name="black60">#99000000</color>
+</resources>

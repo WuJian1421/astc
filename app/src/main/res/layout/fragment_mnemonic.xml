@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+
+        <com.example.astc.util.views.ClearEditText
+            android:id="@+id/et_user_mnemonic"
+            style="@style/EditTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginStart="5dp"
+            android:drawableLeft="@mipmap/user"
+            android:drawablePadding="10dp"
+            android:hint="@string/please_enter_user_name"
+            tools:ignore="RtlHardcoded" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:text="@string/sequence_mnemonic"
+            android:textSize="14sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+
+        <com.donkingliang.labels.LabelsView
+            android:id="@+id/lv_mnemonic"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginTop="10dp"
+            android:background="@mipmap/edit_input_bg"
+            android:minHeight="25dp"
+            android:padding="5dp"
+            app:isIndicator="true"
+            app:labelBackground="@drawable/round_rectangle_bg"
+            app:labelTextColor="@android:color/black"
+            app:labelTextPaddingBottom="5dp"
+            app:labelTextPaddingLeft="10dp"
+            app:labelTextPaddingRight="10dp"
+            app:labelTextPaddingTop="5dp"
+            app:labelTextSize="14sp"
+            app:lineMargin="10dp"
+            app:selectType="MULTI"
+            app:wordMargin="10dp" />
+
+        <com.donkingliang.labels.LabelsView
+            android:id="@+id/lv_show_mnemonic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:minHeight="25dp"
+            android:padding="5dp"
+            app:labelBackground="@drawable/round_rectangle_bg"
+            app:labelTextColor="@android:color/black"
+            app:labelTextPaddingBottom="5dp"
+            app:labelTextPaddingLeft="10dp"
+            app:labelTextPaddingRight="10dp"
+            app:labelTextPaddingTop="5dp"
+            app:labelTextSize="14sp"
+            app:lineMargin="10dp"
+            app:selectType="MULTI"
+            app:wordMargin="10dp" />
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/bu_fr_mnemonic"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
+        android:background="@mipmap/bu_yellow"
+        android:gravity="center"
+        android:text="@string/start_import"
+        android:textColor="@android:color/white" />
+</LinearLayout>

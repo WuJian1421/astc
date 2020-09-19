@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".view.activity.mine.EnterpriseCertificationActivity">
+
+    <com.hjq.bar.TitleBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/yellow"
+        app:title="@string/enterprise_certification" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:overScrollMode="never">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="start"
+                    android:text="@string/legal_person_name"
+                    android:textColor="@android:color/black"
+                    android:textSize="17sp" />
+
+                <com.example.astc.util.views.ClearEditText
+                    android:id="@+id/et_ec1"
+                    style="@style/EditTextStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="@string/legal_person_name_tips" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:text="@string/id_number"
+                    android:textColor="@android:color/black"
+                    android:textSize="17sp" />
+
+                <com.example.astc.util.views.ClearEditText
+                    android:id="@+id/et_ec2"
+                    style="@style/EditTextStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="@string/id_number_tips" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="80dp"
+                        android:layout_height="30dp"
+                        android:layout_marginStart="5dp"
+                        android:text="@string/certification_status"
+                        android:textColor="@android:color/black"
+                        android:textSize="17sp" />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/cv_ec"
+                        android:layout_width="80dp"
+                        android:layout_height="30dp"
+                        android:layout_marginStart="5dp"
+                        android:background="@mipmap/review_yellow_box"
+                        android:gravity="center"
+                        android:text="@string/under_review"
+                        android:textColor="@android:color/holo_red_dark"
+                        android:textSize="15sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <include
+                android:id="@+id/include_ec"
+                layout="@layout/item_certificate" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/bu_ec"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="10dp"
+                android:background="@mipmap/bu_yellow"
+                android:gravity="center"
+                android:text="@string/next_step"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

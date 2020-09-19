@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/main_home"
+        android:icon="@drawable/home_selector"
+        android:title="@string/home" />
+    <item
+        android:id="@+id/main_wealth"
+        android:icon="@drawable/wealth_selector"
+        android:title="@string/wealth" />
+    <item
+        android:id="@+id/main_conversation"
+        android:icon="@drawable/conversation_selector"
+        android:title="@string/conversation" />
+    <item
+        android:id="@+id/main_application"
+        android:icon="@drawable/application_selector"
+        android:title="@string/application" />
+    <item
+        android:id="@+id/main_mine"
+        android:icon="@drawable/mine_selector"
+        android:title="@string/mine" />
+</menu>

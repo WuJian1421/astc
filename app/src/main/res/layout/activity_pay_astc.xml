@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".view.activity.mine.PayAstcActivity">
+
+    <com.hjq.bar.TitleBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/yellow"
+        app:title="@string/bind_astc" />
+
+    <com.example.astc.util.views.ClearEditText
+        android:id="@+id/et_pay_astc"
+        style="@style/EditTextStyle"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:hint="@string/please_enter_astc_wallet_address" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/bu_pay_astc"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="20dp"
+        android:background="@mipmap/bu_yellow"
+        android:gravity="center"
+        android:text="@string/save"
+        android:textColor="@android:color/white" />
+</LinearLayout>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cl_guide"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.activity.GuidePageActivity">
+
+    <cn.bingoogolapple.bgabanner.BGAGuideLinkageLayout
+        android:id="@+id/bgaGuide"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <cn.bingoogolapple.bgabanner.BGABanner
+            android:id="@+id/bgaBanner"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:banner_pointAutoPlayAble="false"
+            app:banner_pointContainerBackground="@android:color/transparent"
+            app:banner_pointDrawable="@drawable/ic_indicator"
+            app:banner_pointTopBottomMargin="15dp" />
+    </cn.bingoogolapple.bgabanner.BGAGuideLinkageLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_main"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
+        android:background="@mipmap/bu_yellow"
+        android:gravity="center"
+        android:text="@string/open_app"
+        android:textColor="@android:color/white"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/ll_enter"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginBottom="65dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/bu_import"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_weight="1"
+            android:background="@mipmap/bu_white"
+            android:text="@string/import_wallet"
+            android:textColor="@color/yellow"
+            tools:ignore="Suspicious0dp" />
+
+        <View
+            android:layout_width="20dp"
+            android:layout_height="match_parent" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/bu_create"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:layout_weight="1"
+            android:background="@mipmap/bu_yellow"
+            android:text="@string/create_wallet"
+            android:textColor="@android:color/white"
+            tools:ignore="Suspicious0dp" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/fl_gpa"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/iv_welcome"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@mipmap/startup_page"
+            android:contentDescription="@string/todo" />
+
+        <com.example.astc.util.views.SmartTextView
+            android:id="@+id/tv_welcome"
+            android:layout_width="50dp"
+            android:layout_height="35dp"
+            android:layout_gravity="end"
+            android:layout_margin="10dp"
+            android:layout_marginTop="10dp"
+            android:gravity="right"
+            android:textColor="@android:color/white"
+            android:textSize="12sp"
+            tools:ignore="RtlHardcoded"
+            tools:text="跳过" />
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.hjq.bar.TitleBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/yellow"
+        app:rightColor="@android:color/white"
+        app:rightTitle="@string/determine"
+        app:title="@string/language_settings" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/item_bu_ls1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@mipmap/bu_yellow"
+        android:text="@string/language_chinese"
+        android:textColor="@android:color/black"
+        android:textSize="15sp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/item_bu_ls2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@mipmap/bu_white"
+        android:text="@string/language_english"
+        android:textColor="@android:color/black"
+        android:textSize="15sp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/item_bu_ls3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@mipmap/bu_white"
+        android:text="@string/language_korean"
+        android:textColor="@android:color/black"
+        android:textSize="15sp" />
+</LinearLayout>
